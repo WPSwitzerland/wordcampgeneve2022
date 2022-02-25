@@ -1,0 +1,422 @@
+/**
+ * Styles for WordCamp Genève 2022 https://geneve.wordcamp.org/2022
+ * using the Twenty Twenty-Two Theme, FSE and Gutenberg Blocks
+ * 
+ * by the WordCamp Genève 2022 team, based on WordCamp Genève 2020, Lausanne 2018 and earlier WordCamps in Switzerland 
+
+*/
+:root {
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+}
+
+.entry-content, .wp-block-latest-posts .wp-block-latest-posts__post-excerpt, ul, ol {
+	font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6, .author-bio .author-bio-content .author-title, .post-navigation .post-title {
+	font-family: "Playfair Display", serif;
+	color: #B5007C;
+}
+
+.primary-navigation a {
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+}
+
+.wp-block-latest-posts li a:not(.more-link) {
+	font-family: "Playfair Display", serif;
+	font-size: 30px;
+}
+
+a {
+	color: #005EA7;
+	text-decoration-color: #B5007C;
+}
+
+/*
+ *  USEFUL CLASSES
+ */
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.padding-bottom li {
+	padding-bottom: 40px;
+}
+
+/*
+ *  MISC FIXES
+ */
+.session-categories-links {
+	text-align: center;
+}
+
+/* Align logo over the featured image */
+.backfi {
+	position: relative;
+	text-align: center;
+}
+
+.overlayfi {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	transform: translate(-50%,-50%);
+}
+
+.wp-block-post-comments {
+	padding-top: 0;
+}
+
+#session-speaker-names, #speaker-session-names {
+	padding: 0;
+}
+
+/*
+ *  TABLES
+ */
+th, td {
+	border-bottom: thin solid #ccc;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 40px;
+}
+
+/*
+ * TICKETS 
+ * Multilingual Ticketing 
+ *
+ */
+#tix .tix-row-first-name .tix-left::after {
+	content: ' / First Name';
+}
+
+#tix .tix-row-last-name .tix-left::after {
+	content: ' / Last Name';
+}
+
+#tix .tix-row-allergy .tix-left::after {
+	content: ' / Do you have a life-threatening allergy that would affect your experience at WordCamp?';
+}
+
+#tix .tix-row-accommodations .tix-left::after {
+	content: ' / Do you have any accessibility needs, such as a sign language interpreter or wheelchair access, to participate in WordCamp?';
+}
+
+#tix .tix-row-privacy .tix-left::after {
+	content: ' / Do you want to be listed on the public Attendees page?';
+}
+
+#tix .tix-row-coc .tix-left::after {
+	content: ' / Do you agree to follow the event Code of Conduct?';
+}
+
+#tix .tix-row-accommodations .tix-right label:last-child::after,
+#tix .tix-row-privacy .tix-right label:last-child::after,
+#tix .tix-row-allergy .tix-right label:last-child::after {
+	content: ' / No';
+}
+
+#tix .tix-row-coc .tix-right label:first-child::after,
+#tix .tix-row-privacy .tix-right label:first-child::after {
+	content: ' / Yes';
+}
+
+#tix .tix-row-accommodations .tix-right label:first-child::after,
+#tix .tix-row-allergy .tix-right label:first-child::after {
+	content: ' / Yes (We will contact you)';
+}
+
+#tix .tix-row-first-name,
+#tix .tix-row-last-name,
+#tix .tix-row-email {
+	padding-bottom: 100px;
+}
+
+#tix .tix-row-covid-waiver .tix-left label:first-child::after {
+	content: ' / Please check this box to confirm your acceptance to these conditions and risks';
+}
+
+#tix tr.tix-row-covid-waiver p:nth-child(2):after {
+	content: "An inherent risk of exposure to COVID-19 exists in any public place where people are present. COVID-19 is an extremely contagious disease that can lead to severe illness and death. According to the World Health Organization, senior citizens and guests with underlying medical conditions are especially vulnerable.";
+	display: block;
+}
+
+#tix tr.tix-row-covid-waiver p:nth-child(3):after {
+	content: "By attending WordCamp Genève 2022, you voluntarily assume all risks related to exposure to COVID-19 and waive any claims against the event organizers; volunteers; sponsors; the WordPress Foundation; WordPress Community Support, PBC; and their respective affiliates.";
+	display: block;
+}
+
+.speaker-avatar {
+	display: none;
+}
+
+/* Ticket column */
+.tix-column-description {
+	width: 500px;
+	text-align: left;
+}
+
+.tix-column-price {
+	width: 120px;
+	text-align: left;
+}
+
+/** MENU */
+/** Submenu */
+/* Font size */
+.custom-menu ul.wp-block-navigation__submenu-container li {
+	font-size: 1rem !important;
+}
+
+/* Color same as first entries */
+.custom-menu-fr a {
+	color: var(--wp--preset--color--custom-color-1) !important;
+}
+
+.custom-menu-en a {
+	color: var(--wp--preset--color--custom-color-2) !important;
+}
+
+/** Mobile menu */
+@media (max-width: 600px) {
+	.custom-menu {
+		align-items: center;
+		margin: auto;
+		display: flex;
+	}
+	
+	.custom-menu .wp-block-group {
+		width: 50%;
+		margin: 0;
+	}
+	
+	.custom-menu .wp-block-group:first-of-type {
+		border-right: 1px solid #9999995e;
+	}
+	
+	.custom-menu nav button.wp-block-navigation__responsive-container-open {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 1000;
+	}
+	
+	.custom-menu nav button.wp-block-navigation__responsive-container-open svg {
+		width: 100%;
+		height: 100%;
+		visibility: hidden;
+	}
+	
+	.custom-menu nav.custom-menu-en:before {
+		content: "English menu";
+	}
+	
+	.custom-menu nav.custom-menu-fr:before {
+		content: "Menu Français";
+	}
+}
+
+/** Sessions block */
+.wordcamp-schedule__time-slot-header.is-empty {
+	display: none !important;
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__date {
+	display: none;
+}
+
+.wordcamp-schedule-custom:not(.is-style-single-column-layout) .wordcamp-schedule__session {
+	box-shadow: 0 0 1px 1px var(--wp--preset--color--custom-color-2);
+}
+
+/* Header */
+.wordcamp-schedule-custom .wordcamp-schedule__day, .wordcamp-schedule-custom .wordcamp-schedule__column-header {
+	background-color: #fff !important;
+}
+
+.wordcamp-schedule-custom .is-column-time {
+	display: none !important;
+}
+
+/* Session details */
+.wordcamp-schedule-custom h4 a {
+	color: var(--wp--preset--color--custom-color-1);
+	font-size: larger;
+	font-weight: 400;
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__session p {
+	display: none;
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__session-speakers, 
+.wordcamp-schedule-custom .wordcamp-schedule__session-category {
+	margin-bottom: 0;
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__session-speakers a {
+	color: var(--wp--preset--color--custom-color-2);
+}
+
+/* All tracks sessions */
+.wordcamp-schedule-custom .is-spanning-all-tracks, #wordcamp-schedule__session-5269, #wordcamp-schedule__session-5272 {
+	background-color: aliceblue;
+}
+
+.wordcamp-schedule-custom .is-spanning-all-tracks a {
+	margin: auto;
+}
+
+/* Hours */
+.wordcamp-schedule-custom .wordcamp-schedule__time-slot-header {
+	align-self: start;
+	box-shadow: none !important;
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:after {
+	position: relative;
+	background-color: #fff;
+	top: -16px;
+	font-size: x-large;
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(1)::after {
+	content: "09:00";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(2)::after {
+	content: "09:45";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(3)::after {
+	content: "10:00";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(5)::after {
+	content: "10:40";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(7)::after {
+	content: "11:00";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(8)::after {
+	content: "11:35";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(9)::after {
+	content: "11:50";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(11)::after {
+	content: "12:30";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(12)::after {
+	content: "12:45";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(13)::after {
+	content: "14:00";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(15)::after {
+	content: "14:40";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(17)::after {
+	content: "15:00";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(19)::after {
+	content: "15:40";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(20)::after {
+	content: "15:55";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(21)::after {
+	content: "16:10";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(23)::after {
+	content: "16:50";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(25)::after {
+	content: "17:10";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(27)::after {
+	content: "17:30";
+}
+
+.wordcamp-schedule-custom .wordcamp-schedule__day h3.wordcamp-schedule__time-slot-header:nth-of-type(29)::after {
+	content: "18:10";
+}
+
+
+/* SPONSORS */
+.wordcamp-sponsors {
+	display: grid;
+	padding: 0;
+  grid-gap: 20px 50px;
+}
+
+.wordcamp-sponsors li {
+	display: inline-flex;
+	margin: auto !important;
+  padding: 0 !important;
+	aspect-ratio : 1/1;
+	align-items: center;
+  justify-self: center;
+}
+
+.wordcamp-sponsors .wordcamp-sponsors__logo a {
+	display: block;
+}
+
+.wordcamp-sponsors img.wordcamp-image__featured-image {
+	object-fit: contain;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	margin: auto;
+}
+
+/* Gold */
+ul.wordcamp-sponsors.sponsors-global, ul.wordcamp-sponsors.sponsors-gold {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+/* Silver */
+ul.wordcamp-sponsors.sponsors-silver {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+/* Bronze */
+ul.wordcamp-sponsors.sponsors-bronze {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+/* Micro */
+ul.wordcamp-sponsors.sponsors-microsponsors {
+	grid-template-columns: repeat(6, 1fr);
+}
