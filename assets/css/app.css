@@ -383,10 +383,10 @@ th, td {
 .wordcamp-sponsors li {
 	display: inline-flex;
 	margin: auto !important;
-  padding: 0 !important;
+	padding: 0 !important;
 	aspect-ratio : 1/1;
 	align-items: center;
-  justify-self: center;
+	justify-self: center;
 }
 
 .wordcamp-sponsors .wordcamp-sponsors__logo a {
