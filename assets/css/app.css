@@ -420,3 +420,30 @@ ul.wordcamp-sponsors.sponsors-bronze {
 ul.wordcamp-sponsors.sponsors-microsponsors {
 	grid-template-columns: repeat(6, 1fr);
 }
+
+/** Mobile menu */
+@media (max-width: 600px) {
+	/* Gold */
+	ul.wordcamp-sponsors.sponsors-global, ul.wordcamp-sponsors.sponsors-gold {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	
+	ul.wordcamp-sponsors.sponsors-global img, ul.wordcamp-sponsors.sponsors-gold img {
+		max-height: 100px;
+	}
+
+	/* Silver */
+	ul.wordcamp-sponsors.sponsors-silver {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* Bronze */
+	ul.wordcamp-sponsors.sponsors-bronze {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	/* Micro */
+	ul.wordcamp-sponsors.sponsors-microsponsors {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
