@@ -3,8 +3,8 @@
  * using the Twenty Twenty-Two Theme, FSE and Gutenberg Blocks
  * 
  * by the WordCamp Genève 2022 team, based on WordCamp Genève 2020, Lausanne 2018 and earlier WordCamps in Switzerland 
+ */
 
-*/
 :root {
 }
 
@@ -421,7 +421,7 @@ ul.wordcamp-sponsors.sponsors-microsponsors {
 	grid-template-columns: repeat(6, 1fr);
 }
 
-/** Mobile menu */
+/** Sponsors / Mobile */
 @media (max-width: 600px) {
 	/* Gold */
 	ul.wordcamp-sponsors.sponsors-global, ul.wordcamp-sponsors.sponsors-gold {
