@@ -380,11 +380,11 @@ th, td {
   grid-gap: 20px 50px;
 }
 
-.wordcamp-sponsors li {
+.wordcamp-post-list.wordcamp-sponsors li {
 	display: inline-flex;
-	margin: auto !important;
-	padding: 0 !important;
-	aspect-ratio : 1/1;
+	margin: 1em auto;
+	padding: 0;
+	/*aspect-ratio : 1/1;*/
 	align-items: center;
 	justify-self: center;
 }
