@@ -525,12 +525,12 @@ ul.wordcamp-speakers li.wordcamp-post-list__post:after {
 	
 	ul.wordcamp-speakers .wordcamp-speakers__content figure {
 		width: 70%;
-    margin: auto;
+		margin: auto;
 	}
 	
 	ul.wordcamp-speakers .wordcamp-speakers__content ul.wp-block-social-links {
 		row-gap: 0;
-    column-gap: 0;
+		column-gap: 0;
 	}
 	
 	ul.wordcamp-speakers .wordcamp-speakers__content ul.wp-block-social-links .wp-block-social-link {
@@ -543,8 +543,8 @@ ul.wordcamp-speakers li.wordcamp-post-list__post:after {
 	
 	ul.wordcamp-speakers .wordcamp-speakers__sessions {
 		flex-direction: column;
-    justify-content: center;
-    text-align: center;
+		justify-content: center;
+		text-align: center;
 		margin: 0;
 	}
 	
