@@ -464,8 +464,12 @@ ul.wordcamp-speakers .wordcamp-speakers__content .wp-block-image {
 ul.wordcamp-speakers .wordcamp-speakers__content figure {
 	display: block;
 	height: 90%;
-  width: 90%;
+  	width: 90%;
 	margin-left: 0;
+}
+
+ul.wordcamp-speakers .wordcamp-speakers__content p {
+	text-align: justify;
 }
 
 ul.wordcamp-speakers .wordcamp-speakers__content ul.wp-block-social-links {
