@@ -452,12 +452,11 @@ ul.wordcamp-sponsors.sponsors-microsponsors {
  * Speakers
  */
 ul.wordcamp-speakers .wordcamp-speakers__content {
-	min-height: 320px;
+	min-height: 290px;
 }
 
 ul.wordcamp-speakers .wordcamp-speakers__content .wp-block-image {
 	width: 300px;
-	height: 300px;
 	float: left;
 }
 
