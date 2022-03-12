@@ -1,9 +1,16 @@
 /**
- * Styles for WordCamp Genève 2022 https://geneve.wordcamp.org/2022
- * using the Twenty Twenty-Two Theme, FSE and Gutenberg Blocks
+ * Custom WordCamp Genève 2022 (https://geneve.wordcamp.org/2022) stylesheet
+ * Using the Twenty Twenty-Two Theme, FSE and Gutenberg Blocks
+ * CSS is imported from github with the remote css feature
+ *
+ * @url https://make.wordpress.org/community/2015/11/24/remote-css-plugin-launched-on-wordcamp-org/
  * 
- * by the WordCamp Genève 2022 team, based on WordCamp Genève 2020, Lausanne 2018 and earlier WordCamps in Switzerland 
+ * By the WordCamp Genève 2022 team, based on WordCamp Genève 2020, Lausanne 2018 and earlier WordCamps in Switzerland
+ * @author Patricia BT, Andras Guseo, Maxime Culea
  */
+
+// Import dashicons only if used
+@import url("https://geneve.wordcamp.org/2022/wp-includes/css/dashicons.min.css");
 
 :root {
 }
