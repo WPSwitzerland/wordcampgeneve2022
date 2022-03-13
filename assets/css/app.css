@@ -560,3 +560,58 @@ ul.wordcamp-speakers li.wordcamp-post-list__post:after {
 		margin: 0;
 	}
 }
+
+/**
+ * New HP
+ */
+
+/* Template unwanted H1 with div (FSE) */
+body.page-id-6076 .wp-site-blocks .wp-block-group.alignfull.size-large, body.page-id-6204 .wp-site-blocks .wp-block-group.alignfull.size-large {
+	display: none;
+}
+
+/* Template unwanted first spacer (FSE) */
+body.page-id-6076 .wp-site-blocks .wp-block-spacer:nth-child(3), body.page-id-6204 .wp-site-blocks .wp-block-spacer:nth-child(3) {
+	display: none;
+}
+
+/* Template unwanted HR with div (FSE) */
+body.page-id-6076 #wp--skip-link--target .wp-block-group:nth-child(1), body.page-id-6204 #wp--skip-link--target .wp-block-group:nth-child(1) {
+	display: none;
+}
+
+/* Template unwanted spacer (FSE) */
+body.page-id-6076 #wp--skip-link--target .wp-block-spacer:nth-child(2), body.page-id-6204 #wp--skip-link--target .wp-block-spacer:nth-child(2) {
+	display: none;
+}
+
+/* Content H1 */
+body.page-id-6076 main h1, body.page-id-6204 main h1 {
+	margin: 5rem;
+}
+
+/* Content HR Margins */
+body.page-id-6076 main hr, body.page-id-6204 main hr {
+	margin: 75px 0 50px 0;
+}
+
+/* Content img */
+body.page-id-6076 main .wp-block-media-text__media, body.page-id-6204 .wp-block-media-text__media {
+    height: 80%;
+}
+
+/* Content img */
+body.page-id-6076 main .wp-block-media-text__media img, body.page-id-6204 main .wp-block-media-text__media img {
+    object-fit: contain;
+    height: 100%;
+}
+
+/* Content 3 columns images */
+body.page-id-6076 main .object-fit-contain img, body.page-id-6204 .object-fit-contain img{
+	object-fit: contain;
+}
+
+/* Footer unwanted H2 (FSE) */
+body.page-id-6076 footer h2, body.page-id-6204 footer h2 {
+	display: none;
+}
