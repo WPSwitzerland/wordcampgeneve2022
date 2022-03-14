@@ -657,3 +657,40 @@ body.page-id-6076 footer h2, body.page-id-6204 footer h2 {
 		display: none;
 	}
 }
+
+/**
+ * Ressources page
+ */
+
+/* Align left DL */
+body.page-id-6267 .wp-block-post-content div.wp-block-file {
+    margin-left: 0 !important;
+}
+
+/* Margin for content elements */
+body.page-id-6267 .wp-block-post-content p, .wp-block-post-content div.wp-block-file {
+    margin-top: 2rem !important;
+}
+
+/* DL Button */
+body.page-id-6267 .wp-block-file a.wp-block-file__button {
+	background-color: #005eaf;
+  padding: 8px 20px;
+}
+
+/** Sponsors / Mobile */
+@media (max-width: 600px) {
+	body.page-id-6267 .wp-block-post-content {
+		text-align: center;
+	}
+	
+	/* Flex centered DL Button */
+	body.page-id-6267 .wp-block-file {
+		display: flex;
+    flex-direction: column;
+	}
+	/* Flex centered DL Button */
+	body.page-id-6267 .wp-block-file a {
+		margin: auto;
+	}
+}
