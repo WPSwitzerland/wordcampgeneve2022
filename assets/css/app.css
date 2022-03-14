@@ -694,3 +694,20 @@ body.page-id-6267 .wp-block-file a.wp-block-file__button {
 		margin: auto;
 	}
 }
+
+/** Footer Mobile */
+@media (max-width: 600px) {
+	footer .has-background .wp-block-group.alignwide {
+		display: flex;
+		flex-direction: column;
+		grid-row-gap: 0;
+	}
+	
+	footer .has-background p + p {
+		margin-top: 5px;
+	}
+	
+	footer .has-background p {
+		display: block;
+	}
+}
